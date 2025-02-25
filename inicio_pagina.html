@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienvenido</title>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: url('https://firebasestorage.googleapis.com/v0/b/segundo-parcial-68aed.appspot.com/o/xd.jpeg?alt=media&token=851514c7-d501-462b-bcc1-7ca5aa040e9b') no-repeat center center fixed;
+            background-size: cover;
+            padding: 20px;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: white;
+        }
+
+        .container {
+            background-color: rgba(0, 0, 0, 0.6);
+            border-radius: 10px;
+            padding: 40px;
+            text-align: center;
+            max-width: 600px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+        }
+
+        h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+
+        .message {
+            font-size: 1.5em;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>¡Bienvenido!</h2>
+        <p>Has iniciado sesión exitosamente usando tu cuenta de Gmail.</p>
+        <p>Se ha validado tu sesión mediante un token de confirmación, y ahora puedes acceder a la plataforma.</p>
+
+        <div class="message">
+            <p>¡Disfruta de tu experiencia en la aplicación!</p>
+        </div>
+    </div>
+
+    <script>
+        const firebaseConfig = {
+            apiKey: "AIzaSyAeHLt1XY0uDN81g28vznC7L0YzlrzOjVA",
+            authDomain: "tarea-29d74.firebaseapp.com",
+            databaseURL: "https://tarea-29d74-default-rtdb.firebaseio.com",
+            projectId: "tarea-29d74",
+            storageBucket: "tarea-29d74.appspot.com",
+            messagingSenderId: "271771156744",
+            appId: "1:271771156744:web:20e9252cc920b29129ecbd"
+        };
+
+        // Inicialización de Firebase
+        firebase.initializeApp(firebaseConfig);
+    </script>
+</body>
+
+</html>
